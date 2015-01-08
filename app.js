@@ -12,9 +12,16 @@ function($scope){
 ];
 
   $scope.addPost = function(){
+    // Check, if theres nothing in the text box - don't do anything
     if(!$scope.title || $scope.title === '') { return; }
-    $scope.posts.push({title: $scope.title, upvotes: 0});
+    $scope.posts.push({
+      title: $scope.title,
+      link: $scope.link,
+      upvotes: 0
+    });
     $scope.title = '';
+    $scope.link = '';
+    console.log("refresh");
   };
 
   $scope.incrementUpvotes = function(post) {
