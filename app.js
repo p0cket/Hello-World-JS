@@ -11,17 +11,30 @@ function($scope){
     {title: 'post 5', upvotes: 4}
 ];
 
+  // $scope.addPost = function(){
+  //   // Check, if theres nothing in the text box - don't do anything
+  //   if(!$scope.title || $scope.title === '') { return; }
+  //   $scope.posts.push({
+  //     title: $scope.title,
+  //     link: $scope.link,
+  //     upvotes: 0
+  //   });
+  //   $scope.title = '';
+  //   $scope.link = '';
+  //   console.log("refresh");
+  // };
+
   $scope.addPost = function(){
-    // Check, if theres nothing in the text box - don't do anything
+    //don't let them make an empty post
     if(!$scope.title || $scope.title === '') { return; }
     $scope.posts.push({
       title: $scope.title,
       link: $scope.link,
       upvotes: 0
     });
+    //we take the post text from $scope.title and $scope.link, which we then clear
     $scope.title = '';
     $scope.link = '';
-    console.log("refresh");
   };
 
   $scope.incrementUpvotes = function(post) {
