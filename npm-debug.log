@@ -1,0 +1,135 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'mongod' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.34
+4 verbose cache add [ 'mongod', null ]
+5 verbose cache add name=undefined spec="mongod" args=["mongod",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'mongod',
+6 verbose parsed url   path: 'mongod',
+6 verbose parsed url   href: 'mongod' }
+7 silly lockFile 2efa196a-mongod mongod
+8 verbose lock mongod /Users/yehudasilbermintz/.npm/2efa196a-mongod.lock
+9 silly lockFile 2efa196a-mongod mongod
+10 silly lockFile 2efa196a-mongod mongod
+11 verbose addNamed [ 'mongod', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile aa6e1ae3-mongod mongod@
+14 verbose lock mongod@ /Users/yehudasilbermintz/.npm/aa6e1ae3-mongod.lock
+15 silly addNameRange { name: 'mongod', range: '*', hasData: false }
+16 verbose request where is /mongod
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id e900a599de7f87fd
+19 verbose url raw /mongod
+20 verbose url resolving [ 'https://registry.npmjs.org/', './mongod' ]
+21 verbose url resolved https://registry.npmjs.org/mongod
+22 verbose request where is https://registry.npmjs.org/mongod
+23 info trying registry request attempt 1 at 22:21:22
+24 http GET https://registry.npmjs.org/mongod
+25 http 200 https://registry.npmjs.org/mongod
+26 silly registry.get cb [ 200,
+26 silly registry.get   { date: 'Fri, 09 Jan 2015 06:21:22 GMT',
+26 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"80WTQR4IY4TPITSKA5CHPI347"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     'content-length': '5624',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     'x-served-by': 'cache-lax1420-LAX',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1420784482.699670,VS0,VE76',
+26 silly registry.get     vary: 'Accept',
+26 silly registry.get     'keep-alive': 'timeout=10, max=50',
+26 silly registry.get     connection: 'Keep-Alive' } ]
+27 silly addNameRange number 2 { name: 'mongod', range: '*', hasData: true }
+28 silly addNameRange versions [ 'mongod', [ '1.0.0', '1.1.0', '1.1.1', '1.2.0', '1.3.0' ] ]
+29 verbose addNamed [ 'mongod', '1.3.0' ]
+30 verbose addNamed [ '1.3.0', '1.3.0' ]
+31 silly lockFile b5aa2fdb-mongod-1-3-0 mongod@1.3.0
+32 verbose lock mongod@1.3.0 /Users/yehudasilbermintz/.npm/b5aa2fdb-mongod-1-3-0.lock
+33 silly lockFile a39a0de3-pmjs-org-mongod-mongod-1-3-0-tgz https://registry.npmjs.org/mongod/-/mongod-1.3.0.tgz
+34 verbose lock https://registry.npmjs.org/mongod/-/mongod-1.3.0.tgz /Users/yehudasilbermintz/.npm/a39a0de3-pmjs-org-mongod-mongod-1-3-0-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/mongod/-/mongod-1.3.0.tgz',
+35 verbose addRemoteTarball   '52074505844ba449021c4fea9349a9876c7534b9' ]
+36 info retry fetch attempt 1 at 22:21:22
+37 verbose fetch to= /var/folders/64/zf3mb22509x5ccb_bblqys4m0000gn/T/npm-19947-dS4Jzf9D/registry.npmjs.org/mongod/-/mongod-1.3.0.tgz
+38 http GET https://registry.npmjs.org/mongod/-/mongod-1.3.0.tgz
+39 http 200 https://registry.npmjs.org/mongod/-/mongod-1.3.0.tgz
+40 silly lockFile a39a0de3-pmjs-org-mongod-mongod-1-3-0-tgz https://registry.npmjs.org/mongod/-/mongod-1.3.0.tgz
+41 silly lockFile a39a0de3-pmjs-org-mongod-mongod-1-3-0-tgz https://registry.npmjs.org/mongod/-/mongod-1.3.0.tgz
+42 silly lockFile b5aa2fdb-mongod-1-3-0 mongod@1.3.0
+43 silly lockFile b5aa2fdb-mongod-1-3-0 mongod@1.3.0
+44 silly lockFile aa6e1ae3-mongod mongod@
+45 silly lockFile aa6e1ae3-mongod mongod@
+46 silly resolved [ { name: 'mongod',
+46 silly resolved     version: '1.3.0',
+46 silly resolved     description: 'Promise based mongo driver built on mongojs',
+46 silly resolved     keywords: [],
+46 silly resolved     dependencies: { promise: '~5.0.0', mongojs: '~0.12.1' },
+46 silly resolved     devDependencies: { mocha: '*' },
+46 silly resolved     scripts: { test: 'mocha -R spec' },
+46 silly resolved     repository: { type: 'git', url: 'https://github.com/then/mongod.git' },
+46 silly resolved     author: { name: 'ForbesLindesay' },
+46 silly resolved     license: 'MIT',
+46 silly resolved     bugs: { url: 'https://github.com/then/mongod/issues' },
+46 silly resolved     homepage: 'https://github.com/then/mongod',
+46 silly resolved     _id: 'mongod@1.3.0',
+46 silly resolved     dist:
+46 silly resolved      { shasum: '52074505844ba449021c4fea9349a9876c7534b9',
+46 silly resolved        tarball: 'http://registry.npmjs.org/mongod/-/mongod-1.3.0.tgz' },
+46 silly resolved     _from: 'mongod@',
+46 silly resolved     _npmVersion: '1.3.21',
+46 silly resolved     _npmUser: { name: 'forbeslindesay', email: 'forbes@lindesay.co.uk' },
+46 silly resolved     maintainers: [ [Object] ],
+46 silly resolved     directories: {},
+46 silly resolved     _shasum: '52074505844ba449021c4fea9349a9876c7534b9',
+46 silly resolved     _resolved: 'https://registry.npmjs.org/mongod/-/mongod-1.3.0.tgz' } ]
+47 info install mongod@1.3.0 into /usr/local/lib
+48 info installOne mongod@1.3.0
+49 verbose lib/node_modules/mongod unbuild
+50 verbose tar unpack /Users/yehudasilbermintz/.npm/mongod/1.3.0/package.tgz
+51 silly lockFile e455384d-sr-local-lib-node-modules-mongod tar:///usr/local/lib/node_modules/mongod
+52 verbose lock tar:///usr/local/lib/node_modules/mongod /Users/yehudasilbermintz/.npm/e455384d-sr-local-lib-node-modules-mongod.lock
+53 silly lockFile e8657227-ntz-npm-mongod-1-3-0-package-tgz tar:///Users/yehudasilbermintz/.npm/mongod/1.3.0/package.tgz
+54 verbose lock tar:///Users/yehudasilbermintz/.npm/mongod/1.3.0/package.tgz /Users/yehudasilbermintz/.npm/e8657227-ntz-npm-mongod-1-3-0-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/mongod'
+56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/mongod']
+56 error   errno: 3,
+56 error   code: 'EACCES',
+56 error   path: '/usr/local/lib/node_modules/mongod',
+56 error   fstream_type: 'Directory',
+56 error   fstream_path: '/usr/local/lib/node_modules/mongod',
+56 error   fstream_class: 'DirWriter',
+56 error   fstream_stack:
+56 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+56 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+56 error      'Object.oncomplete (fs.js:108:15)' ] }
+57 error Please try running this command again as root/Administrator.
+58 error System Darwin 14.0.0
+59 error command "node" "/usr/local/bin/npm" "install" "-g" "mongod"
+60 error cwd /Users/yehudasilbermintz/Dropbox/Web/Hello World JS
+61 error node -v v0.10.34
+62 error npm -v 1.4.28
+63 error path /usr/local/lib/node_modules/mongod
+64 error fstream_path /usr/local/lib/node_modules/mongod
+65 error fstream_type Directory
+66 error fstream_class DirWriter
+67 error code EACCES
+68 error errno 3
+69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/mongod'
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+70 error fstream_stack Object.oncomplete (fs.js:108:15)
+71 verbose exit [ 3, true ]
