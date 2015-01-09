@@ -26,6 +26,16 @@ angular.module('flapperNews', ['ui.router'])
 functions($scope, $stateParams, posts){
   $scope.post = posts.posts[$stateParams.id];
 
+  $scope.addComment = function(){
+    if($scope.body === '') { return; }
+    $scope.post.comments.push({
+      body: $scope.body,
+      author: 'user',
+      upvotes: 0
+    });
+    $scope.body = '';
+  }
+
 }]);
 
 .controller('MainCtrl', [
@@ -40,8 +50,6 @@ function($scope,posts){
   //   {title: 'post 4', upvotes: 9},
   //   {title: 'post 5', upvotes: 4}
   //   ];
-
-
 
   $scope.posts = posts.posts;
 
@@ -60,13 +68,14 @@ function($scope,posts){
     $scope.title = '';
     $scope.link = '';
     console.log("refresh");
-
   };
 
   $scope.incrementUpvotes = function(post) {
     post.upvotes += 1;
   };
 
+
+   //addPost pushes it to the factory
   .factory('posts', [function(){
     var o = {
       posts: []
